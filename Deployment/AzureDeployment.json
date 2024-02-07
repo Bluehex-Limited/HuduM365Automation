@@ -1,5 +1,5 @@
 {
-    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
         "baseName": {
@@ -10,7 +10,7 @@
             }
         },
         "repoUrl": {
-            "defaultValue": "https://github.com/lwhitelock/HuduM365Automation.git",
+            "defaultValue": "https://github.com/Bluehex-Limited/HuduM365Automation/tree/master",
             "type": "string",
             "metadata": {
                 "description": "Repository URL to use"
@@ -38,84 +38,84 @@
             }
         },
         "customerExclude": {
-            "defaultValue": "Demo Customer,Example Customer,Restricted Customer",
+            "defaultValue": "",
             "type": "string",
             "metadata": {
                 "description": "A list of customer display names to skip from the sync."
             }
         },
         "ApplicationId": {
-            "defaultValue": "0000000-0000-0000-000-000000000",
+            "defaultValue": "7658b0b0-5ca2-4bac-87fa-3d652b93938b",
             "type": "string",
             "metadata": {
                 "description": "The application ID of your SAM application."
             }
         },
         "ApplicationSecret": {
-            "defaultValue": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+            "defaultValue": "kxZ8Ri3h7xBveSiHL3K5Fu9MIr9LrXjd3S5MbgfogbE=",
             "type": "string",
             "metadata": {
                 "description": "The application secret for your SAM application."
             }
         },
         "TenantID": {
-            "defaultValue": "0000000-0000-0000-000-000000000",
+            "defaultValue": "61a4cddd-6798-49c4-9f5b-30964a761ffc",
             "type": "string",
             "metadata": {
                 "description": "Your Partner Tenant ID."
             }
         },
         "RefreshToken": {
-            "defaultValue": "Long Refresh Token",
+            "defaultValue": "0.AWcA3c2kYZhnxEmfWzCWSnYf_LCwWHaiXKxLh_o9ZSuTk4tnAK0.AgABAAEAAAAmoFfGtYxvRrNriQdPKIZ-AgDs_wUA9P-IQVS5-rP1mFrDuFqPCh-a3h5TQvk27sy-TDzXxiLn_knOokuv3njO242GzRCAGu0bTx2neTtinStq0hnwXBPmDIr9vqNpbInk5PFTLkZlavz4YRntchPb0ckFU090l9aZAZUuJ4TR7pomamw_fYJbFa7tpSS49hTIo0sA_dz8HTJ9ntsTQeSr2x7k6nR9nZHoAbRigVS7mgdDOMQ61dEef43GWYb6SLpBzG1cYi6hfVEU_1zLZ2KVIv3nsT6qV1cQnXX6X8nE1oWUDQdim5t_cuRdBMrbr8kAKe2LGeLFrcLQ4M-Te4CqX6GMzF_JMACML7yaxUDMtHnHcvO2i2WpqbqyqVUG2hZZoNPUSfBS_gANv0vw8GVEdPEdypLWH9xzsVOZ71c2oJew3n6JzZKyRwVh_GtxYtOLpmVNkj2RqSCS2rb8R3SXfl-OW64rZ1Y5LTtx_vCTawjBQ2DRBCDtGh4GQ8-6aZKG3G0jx01YIAoCyT52UE1Q_s80MleXymLXskN1VmtM43zizy0fV21QhbdiFkOv6VpF27VTL8VYLAFlTOWAO8bACiF7ouycjV5MxINyV0dzkaKXs_Sg7qHV9DYt5GPWePwsLxjiQRn7a0rGeoMTneQsxS3z89TjH4o4prct7FsgK_x-lG-2plj4eDxSpzUl5eKUVd2v9txyxQeHE50HDI1yhNdWpohMw_TuXjkx8AhdUE4U2dTOZNnyTTRV_j8TixDy-UhM2QnnS7R2m7cXxw36thdlqRVuhXQ8xcnA",
             "type": "string",
             "metadata": {
                 "description": "The long refresh token for your SAM application."
             }
         },
         "ExchangeRefreshToken": {
-            "defaultValue": "Long Exchange Refresh Token",
+            "defaultValue": "0.AWcA3c2kYZhnxEmfWzCWSnYf_BY8x6Djp2RFmpUr30c4NxZnAK0.AgABAAEAAAAmoFfGtYxvRrNriQdPKIZ-AgDs_wUA9P8W2BtzZu0m--zj-j2sWBzUoCduzFFuGXg-0uIwzzNPnHw8Wn9fD-MejSdcmgytIUGpNrVtQntm72XmuQx6pAQ3NkmFJ4GJy__6Gta0M5Fd0utDQ0Gf_-w2vPLyPaoecGY7OCErqgrOKMktwBSHfpIUfJliK2XMim1rnJoelU_Cbe-kr09Ewu_HmGkdV0xUPJOis0SM5NY4sww_22M_PkBSqTO9Fv2wnH-LnSWJWlYov61bmXYqsOgMGSLuo0FNFap9Hexnvo35K6JwcRoFoCSGEBPeNOhvEndvHktxBCu3tAZTkjNL5FLCLz5-B3ys7NXRKU1bo6hp0roHpLEpROTYjnqECNBWwtUkveh5u7cpRjGVX33lET1DqNWC2ZStolSspAgYn8H99eqUztw36h5mWrSfpZfIxQ-SgTJ1grAIwSZ5xNJ-82vSJh9txDCLmquSWvktBkgSYMMWEqXjGKalM4NpbOh51eFX4qiIXz4uXzhUxbFzlnWn2Du_Hnf1Mzgtoxqql4ltK9ZeYrqZgaFBdR2wKECT_sEqt7nMxmo-Yhq_Q4WUYhzGu8UmtsubpL51mW0xG3CKfYwXiMUCGWXc7--vjFM4WL8Czj6zuHxhXwrbN-TjOVyMuouq5nUVvgBODwkJ80odgTiAx1d83jl1MICYaxJNFUJ9fa4OnPyZ0jCb8RYGlCxoxiOLxsjl38M41UdHE8jBB6Fi4wJUaO-YOsgQQK0kuyh3qR8H52mbZBYLwrUihScbD0Gfp5FxXXXt9ubSQsBUjQ",
             "type": "string",
             "metadata": {
                 "description": "The long Exchange refresh token for your SAM application."
             }
         },
         "HuduAPIKey": {
-            "defaultValue": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+            "defaultValue": "hoGgBUoB5J1pE7SBCHJCUdDb",
             "type": "string",
             "metadata": {
                 "description": "Your Hudu API Key."
             }
         },
         "HuduBaseDomain": {
-            "defaultValue": "https://your.hududomain.com",
+            "defaultValue": "https://bluehex.huducloud.com",
             "type": "string",
             "metadata": {
                 "description": "Your Hudu Base Domain."
             }
         },
         "WebhookURL": {
-            "defaultValue": "https://yourtenant.webhook.office.com/webhookb2/dxxxxxxxxxxxxx/IncomingWebhook/xxxxxxxxxx/0000-00000-0000000",
+            "defaultValue": "https://1call365.webhook.office.com/webhookb2/58ca092e-617b-42e1-b5f6-cf091d83f0d9@48442191-e6e0-460e-8351-e3bfc2196bda/IncomingWebhook/abac0292411e4a6c83229d8545919421/f06ddd81-1369-4f46-a67d-92a533405ffd",
             "type": "string",
             "metadata": {
                 "description": "An incoming Teams Webhook URL to recieve Sync Errors and Reports"
             }
         },
         "PSAUserURL": {
-            "defaultValue": "https://your.halodomain.com/customers?mainview=user&inactive=false&userid=",
+            "defaultValue": "",
             "type": "string",
             "metadata": {
                 "description": "The URL used to link a user in Hudu to your PSA (Only Halo supported at present)"
             }
         },
         "RMMDeviceURL": {
-            "defaultValue": "https://merlotrmm.centrastage.net/device/",
+            "defaultValue": "",
             "type": "string",
             "metadata": {
                 "description": "The URL used to link a device to your RMM (Only Datto RMM support at present)"
             }
         },
         "RMMRemoteURL": {
-            "defaultValue": "https://merlot.centrastage.net/csm/remote/rto/",
+            "defaultValue": "",
             "type": "string",
             "metadata": {
                 "description": "The URL used to launch a remote session on a device in your RMM (Only Datto RMM support at present)"
@@ -143,14 +143,14 @@
             }
         },
         "PartnerDefaultDomain": {
-            "defaultValue": "yourdomain.onmicrosoft.com",
+            "defaultValue": "bluehex.co.nz",
             "type": "string",
             "metadata": {
                 "description": "Your Partner Tenant's default domain name."
             }
         },
         "PartnerDisplayName": {
-            "defaultValue": "Your Company Name",
+            "defaultValue": "Bluehex",
             "type": "string",
             "metadata": {
                 "description": "Your Partner Tenant's display name."
@@ -164,7 +164,7 @@
             }
         },
         "CIPPURL": {
-            "defaultValue": "https://your.cippdomain.com/",
+            "defaultValue": "https://salmon-hill-0da455203.2.azurestaticapps.net/",
             "type": "string",
             "metadata": {
                 "description": "Your CIPP domain."
@@ -213,7 +213,7 @@
             }
         },
         "ExcludeSerials": {
-            "defaultValue": "0,SystemSerialNumber,To Be Filled By O.E.M.,System Serial Number,0123456789,123456789,............",
+            "defaultValue": "",
             "type": "string",
             "metadata": {
                 "description": "Serial numbers to ignore and attempt to match on device name instead."
@@ -262,7 +262,7 @@
                 {
                     "type": "secrets",
                     "name": "applicationid",
-                    "apiVersion": "2015-06-01",
+                    "apiVersion": "2016-10-01",
                     "properties": {
                         "contentType": "text/plain",
                         "value": "[parameters('ApplicationID')]"
@@ -274,7 +274,7 @@
                 {
                     "type": "secrets",
                     "name": "applicationsecret",
-                    "apiVersion": "2015-06-01",
+                    "apiVersion": "2016-10-01",
                     "properties": {
                         "contentType": "text/plain",
                         "value": "[parameters('Applicationsecret')]"
@@ -286,7 +286,7 @@
                 {
                     "type": "secrets",
                     "name": "refreshtoken",
-                    "apiVersion": "2015-06-01",
+                    "apiVersion": "2016-10-01",
                     "properties": {
                         "contentType": "text/plain",
                         "value": "[parameters('refreshtoken')]"
@@ -298,7 +298,7 @@
                 {
                     "type": "secrets",
                     "name": "tenantid",
-                    "apiVersion": "2015-06-01",
+                    "apiVersion": "2016-10-01",
                     "properties": {
                         "contentType": "text/plain",
                         "value": "[parameters('tenantid')]"
@@ -310,7 +310,7 @@
                 {
                     "type": "secrets",
                     "name": "exchangerefreshtoken",
-                    "apiVersion": "2015-06-01",
+                    "apiVersion": "2016-10-01",
                     "properties": {
                         "contentType": "text/plain",
                         "value": "[parameters('exchangerefreshtoken')]"
@@ -322,7 +322,7 @@
                 {
                     "type": "secrets",
                     "name": "HuduAPIKey",
-                    "apiVersion": "2015-06-01",
+                    "apiVersion": "2016-10-01",
                     "properties": {
                         "contentType": "text/plain",
                         "value": "[parameters('HuduAPIKey')]"
@@ -334,7 +334,7 @@
                 {
                     "type": "secrets",
                     "name": "HuduBaseDomain",
-                    "apiVersion": "2015-06-01",
+                    "apiVersion": "2016-10-01",
                     "properties": {
                         "contentType": "text/plain",
                         "value": "[parameters('HuduBaseDomain')]"
